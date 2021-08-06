@@ -189,7 +189,7 @@ ingress:
   labels: {}
   path: /
 
-  # pathType is only for k8s >= 1.1=
+  # pathType is only for k8s >= 1.18
   pathType: Prefix
 
   hosts:
@@ -200,7 +200,7 @@ ingress:
   #   backend:
   #     serviceName: ssl-redirect
   #     servicePort: use-annotation
-  ## Or for k8s > 1.19
+  ## Or for k8s >= 1.19
   # - path: /*
   #   pathType: Prefix
   #   backend:
